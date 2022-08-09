@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
-import { Home } from './Home';
+import Home from './Home';
 import { Contact } from './Contact';
 import { Dictionary } from './Dictionary';
 import { News } from './News';
@@ -21,8 +21,3 @@ export default function RouterPage() {
     </div>
   )
 }
-//no
-
-
-//hey
-//hi
