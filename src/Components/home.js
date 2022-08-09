@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import { NavBar } from './NavBar';
 
-class home extends React.Component {
-
+class Home extends React.Component {
+  
     constructor(props) {
       super(props);
       this.state = {
@@ -88,7 +89,7 @@ class home extends React.Component {
     }
   
     render() {
-  
+  <div> <NavBar /> </div>
       let wikiSearchResults = [];
       console.log(this.state.wikiSearchReturnValues);
   
@@ -132,4 +133,4 @@ class home extends React.Component {
         );
       }
     }
-  export default home;
+  export default Home;
