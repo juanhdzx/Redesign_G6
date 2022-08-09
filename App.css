@@ -1,0 +1,173 @@
+/*      --- Wiki title CSS ---  */
+
+
+.App {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+}
+
+h1 {
+font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+font-size: 30px;
+font-size: 3rem;
+font-weight: 400;
+line-height: 33px;
+line-height: 3.3rem;
+text-align: center;
+}
+
+#wikiGlobe {
+  width: 200px;
+  height: 183px;
+}
+
+/*  --- Language Buttons --- */ 
+
+/* .language_buttons {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+} */
+.language_buttons {
+  align-items: left;
+}
+.opt1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  top: 0;
+  right: 60%;
+}
+.opt1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.opt2{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer
+}
+.opt2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.opt3{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer
+}
+.opt3:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.opt4{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer
+}
+.opt4:hover{
+  background-color: #008CBA;
+  color: white;
+  
+}
+
+/*   Home Page - Form   */
+
+.form
+#submitButton{
+  background-color: #008CBA;
+  color: black; 
+  padding: 10px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer
+}
+
+
+/*     ---    Search Result Links   ---  */
+
+
+.searchResultDiv {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.searchResultDiv h3 {
+  color: #1a0dab;
+}
+.searchResultDiv h3 a {
+  color: #1a0dab;
+  display: inline-block;
+  line-height: 16px;
+  text-decoration: none;
+}
+.searchResultDiv h3 a:hover {
+  border-bottom: 3px solid;
+}
+.searchResultDiv a:visited {
+  color: #1a0dab;
+}
+.searchResultDiv .link a {
+  text-decoration: none;
+  color: #287e44;
+}
+.searchResultDiv .link a:hover {
+  text-decoration: none;
+}
+.searchResultDiv .searchmatch {
+  font-weight: bold;
+}
+.searchResultDiv .description {
+  color: #414141;
+}
