@@ -4,20 +4,24 @@ import Home from './Home';
 import { Contact } from './Contact';
 import { Dictionary } from './Dictionary';
 import { News } from './News';
+import {NavBar} from './NavBar';
+//import './App.css';
 
-export default function RouterPage() {
+ function RouterPage() {
   return (
     <div>
         <BrowserRouter>
-        <Routes>
+        <NavBar />
+          <Routes>
             
               <Route path="/"  element={<Home/>} />
               <Route path="contact" element={<Contact/>} />
               <Route path="dictionary" element={<Dictionary/>} />
               <Route path="news" element={<News/>} />
 
-        </Routes>
+          </Routes>
         </BrowserRouter>
     </div>
   )
 }
+export default RouterPage;
