@@ -5,6 +5,7 @@ import { Contact } from './Contact';
 import { Dictionary } from './Dictionary';
 import { News } from './News';
 import {NavBar} from './NavBar';
+import { Footer } from './Footer';
 //import './App.css';
 
  function RouterPage() {
@@ -20,6 +21,7 @@ import {NavBar} from './NavBar';
               <Route path="news" element={<News/>} />
 
           </Routes>
+          <Footer />
         </BrowserRouter>
     </div>
   )
