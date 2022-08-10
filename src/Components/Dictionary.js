@@ -1,11 +1,112 @@
 import React from 'react'
 import { NavBar } from "./NavBar";
+import "./Dictionary.css"; 
 
 
-export const Dictionary = () => {
+const Dictionary = () => {
   return (
-    <div>Dictionary
-        <NavBar />
+    <div>
+      
+      <h1>Wiktionary</h1>
+        <img src="wiktionary.png"
+        width="200px"
+        />
+
+      <div className="searchBox">
+
+
+
+
+        <input
+
+          type="text"
+
+          placeholder="Search..."
+
+          onChange={(e) => {
+
+            setSearchWord(e.target.value);
+
+          }}
+
+        />
+
+        <button
+
+          onClick={() => {
+
+            getMeaning();
+
+          }}
+
+        >
+
+
+          <FaSearch size="20px" />
+
+        </button>
+
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        
+        <button type="button" class="btn btn-light border border-info">English</button>
+        <button type="button" class="btn btn-light">Español</button>
+        <button type="button" class="btn btn-secondary">Italiano</button>
+        <button type="button" class="btn btn-secondary">Deutsch</button>
+      </div>
+
+      {data && (
+
+        <div className="showResults">
+
+          <h2>
+
+            {data.word}{" "}
+
+            <button
+
+              onClick={() => {
+
+                playAudio();
+
+              }}
+
+            >
+
+              <FcSpeaker size="26px" />
+
+            </button>
+
+          </h2>
+
+          <h4>Parts of speech:</h4>
+
+
+
+          <p>{data.meanings[0].partOfSpeech}</p>
+
+
+
+          <h4>Definition:</h4>
+
+
+
+          <p>{data.meanings[0].definitions[0].definition}</p>
+
+
+
+          <h4>Example:</h4>
+
+
+
+          <p>{data.meanings[0].definitions[0].example}</p>
+
+
+        </div>
+
+      )}
     </div>
   )
 }
+
+export default Dictionary;
