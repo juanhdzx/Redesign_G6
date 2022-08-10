@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import styled from 'styled-components'
 import Validation from './Validation'
-import Footer from '../components/Footer'
+import Footer from './Footer'
 
 const Container = styled.div`
     width: 100vw;
