@@ -1,13 +1,37 @@
 import React from 'react'
-//import { NavBar } from './NavBar'
-import './App.css';
+
+import NavBar from './NavBar'
+import styled from 'styled-components'
+import Validation from './Validation'
+import Footer from './Footer'
+
+const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
+     center;
+    background-color:#B6D0E2;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+`;
+const Wrapper = styled.div`
+    
+    padding:20px;
+    background-color:white;
+    
+
+`;
 
 
-
-export const Contact = () => {
+const Contact = () => {
   return (
-    <div>Contact
-        {/* <NavBar /> */}
-    </div>
-  )
+      <>
+    <Container>
+        <Wrapper>
+<Validation/>
+        </Wrapper>
+    </Container>
+ </> )
 }
+
+export default Contact
