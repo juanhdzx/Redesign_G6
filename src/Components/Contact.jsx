@@ -1,5 +1,4 @@
 import React from 'react'
-
 import NavBar from './NavBar'
 import styled from 'styled-components'
 import Validation from './Validation'
@@ -25,12 +24,12 @@ const Wrapper = styled.div`
 
 const Contact = () => {
   return (
-      <>
-    <Container>
+      <> <Validation/>
+    {/* <Container>
         <Wrapper>
-<Validation/>
+
         </Wrapper>
-    </Container>
+    </Container> */}
  </> )
 }
 
