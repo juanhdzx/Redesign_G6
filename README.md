@@ -1,3 +1,5 @@
+From the very beginning of the project, group six envisioned taking a well-known website and recreating it in our own vision. By coming together and brainstorming on what different pages we wanted to emulate, we decided to venture out and try different methods while also retaining the features of the original site. Using elements like third-party API’s we were able to capture the original functionality of Wikipedia while fitting within the requirements of the rubric. With features like a search to define function that allows users to input any word of their pleasing into the search bar, where a definition will appear upon hitting submit. Or with the feature of being able to find articles on the internet by inserting different keywords into the input box. All of this was done while still being able to keep a similar simple layout, allowing users to navigate through a familiar feeling site. In conclusion, we believe we were successful in recreating the original site with our own spin on the functionality. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
