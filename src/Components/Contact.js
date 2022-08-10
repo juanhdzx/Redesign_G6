@@ -25,12 +25,10 @@ const Wrapper = styled.div`
 const Contact = () => {
   return (
       <>
-    <NavBar/>
     <Container>
         <Wrapper>
 <Validation/>
         </Wrapper>
-   
     </Container>
  </> )
 }
