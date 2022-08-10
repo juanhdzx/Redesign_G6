@@ -116,6 +116,7 @@ const Dictionary = () => {
         {/* <NavBar /> */}
 
     </div>
+    </div>
   )
 }
 
