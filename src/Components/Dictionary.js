@@ -1,10 +1,15 @@
 import React from 'react'
+
 import { NavBar } from "./NavBar";
 import "./Dictionary.css"; 
+
+//import { NavBar } from "./NavBar";
+
 
 
 const Dictionary = () => {
   return (
+
     <div>
       
       <h1>Wiktionary</h1>
@@ -105,6 +110,11 @@ const Dictionary = () => {
         </div>
 
       )}
+
+    <div>Dictionary
+      
+        {/* <NavBar /> */}
+
     </div>
   )
 }
