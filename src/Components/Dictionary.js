@@ -10,7 +10,7 @@ import { FcSpeaker } from "react-icons/fc";
 
 
 
-const Dictionary = () => {
+export const Dictionary = () => {
   // Setting up the initial states using react hook 'useState'
 
 
@@ -160,5 +160,4 @@ const Dictionary = () => {
     </div>
   )
 }
-
-export default Dictionary;
+}
