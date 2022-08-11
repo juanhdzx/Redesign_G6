@@ -1,12 +1,21 @@
 /*      --- Wiki title CSS ---  */
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.App {
+body {
+  background-color: rgb(205, 235, 245);
+}
+
+.home-site {
   width: 1100px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: 50px;
+  margin-top: -70px;
+
 }
 
 h1 {
@@ -22,50 +31,54 @@ text-align: center;
 #wikiGlobe {
   width: 200px;
   height: 183px;
+  
 }
+.free-title {
+   /*   add css for "The Free Encyclopedia" title here  */
+}
+p {
+  font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+}
+
+
+
+
+
+
+
+
+
 
 /*  --- Language Buttons --- */ 
 
-/* .language_buttons {
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-} */
 .language_buttons {
-  align-items: left;
+  margin-right: 30px;
 }
-.opt1 {
+.opt1 {   /* English button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  margin-bottom: 50px;
   transition-duration: 0.4s;
   cursor: pointer;
-  top: 0;
-  right: 60%;
+  height: 19px;
 }
 .opt1:hover {
   background-color: #008CBA;
   color: white;
 }
-
-.opt2{
+.opt2{   /* Espanol button   */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -73,17 +86,19 @@ text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
-  cursor: pointer
+  cursor: pointer;
+  height: 55px;
 }
 .opt2:hover {
   background-color: #008CBA;
   color: white;
 }
 
-.opt3{
+.opt3{  /* italiano button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -91,25 +106,28 @@ text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
-  cursor: pointer
+  cursor: pointer;
+  height: 55px;
 }
 .opt3:hover{
   background-color: #008CBA;
   color: white;
 }
 
-.opt4{
+.opt4{  /* deutsch button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   transition-duration: 0.4s;
-  cursor: pointer
+  cursor: pointer;
+  height: 55px;
 }
 .opt4:hover{
   background-color: #008CBA;
@@ -117,57 +135,239 @@ text-align: center;
   
 }
 
-/*   Home Page - Form   */
 
-.form
-#submitButton{
-  background-color: #008CBA;
-  color: black; 
-  padding: 10px 8px;
+
+
+
+
+/*   ---  Home Page - Form  ---  */
+
+
+.search{
+  background-color: #626667;
+  color: rgb(242, 239, 239); 
+  padding: 5px 8px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+   /* display: inline-block;  */
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 4px 2px;
+  margin-left: 5px;
   transition-duration: 0.4s;
-  cursor: pointer
+  cursor: pointer;
+  height: 2.5em;
+  border-radius: 3px;
+  border: none;
+  appearance: none;
+  overflow: hidden;
+  outline: none;
+  border-radius: 6px;
+
 }
+.search:hover{
+  background-color: #008CBA;
+  color: white;
+}
+.input-box {
+  
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: none;
+  appearance: none;
+  overflow: hidden;
+  outline: none;
+
+  width: 100%;
+  max-width: 480px;
+  transition: 0.4s;
+  padding: 3px;
+  padding-left: 30px;
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-family: monospace;
+}
+
+.input-box:focus-within {
+  box-shadow: 3px 3px 6px black;
+  transform: translateY(-5px);
+}
+
+
 
 
 /*     ---    Search Result Links   ---  */
 
 
-.searchResultDiv {
+.searchResultDiv { 
   width: 800px;
   margin: 0 auto;
   text-align: left;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+    border: 12px hidden #849195;
+    padding: 15px;
+    padding-left: 20px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    transition: 0.4s; 
+    
+}
+.searchResultDiv:hover {
+  box-shadow: 3px 3px 6px black;
+
 }
 .searchResultDiv h3 {
-  color: #1a0dab;
+  color: #2222ba;
+  font-size: 20px;
+  margin-bottom: 16px;
+  
 }
 .searchResultDiv h3 a {
   color: #1a0dab;
   display: inline-block;
-  line-height: 16px;
+  line-height: 15px;
   text-decoration: none;
+  padding: 12px 16px;
+  transition: 0.3s;
+
+  font-weight: 700;
+  border-radius: 12px;
+  transition: 0.4s;
+  background-color: lightgray;
 }
 .searchResultDiv h3 a:hover {
   border-bottom: 3px solid;
 }
-.searchResultDiv a:visited {
-  color: #1a0dab;
+.searchResultDiv a:visited { /* pages visited change color */
+  color: #9f1ccb;
 }
 .searchResultDiv .link a {
   text-decoration: none;
-  color: #287e44;
+  color: #aa19b4;
+  
 }
 .searchResultDiv .link a:hover {
-  text-decoration: none;
+  text-decoration: none; 
+  
 }
 .searchResultDiv .searchmatch {
   font-weight: bold;
+ 
 }
 .searchResultDiv .description {
   color: #414141;
+  font-size: 17px;
+  margin-bottom: 16px;
+  padding: 13px;
+  text-align: left;
+  line-height: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*  ---      Main Footer CSS      ---  */
+
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+#footer-places li{
+  float: left;
+  margin-right: 1em;
+  margin-left: 7.5em;
+  line-height: 2;
+  padding-bottom: 20px;
+}
+#footer-info{
+  line-height: 1.4;
+  color: #202122;
+    /* margin: 40px; */
+    width: 95%;
+    /* padding: 2em 20em ; */
+    font-size: .80em;
+}
+#footer-info-lastmod{
+  margin-left: 45em;
+  font-size: 12px;
+}
+#footer-info-copyright{
+  padding-top: 10px;
+  width: 60%;
+  margin-left: 26em;
+}
+#homies{
+  padding-top: 30px;
+  margin-left: 55em;
+}
+
+
+/* ---     Social Media - Footer      --- */
+
+#FB {
+  color: blue;
+}
+
+#Twitter {
+  color: rgb(22, 216, 216)
+}
+
+#IG {
+  color: rgb(248, 35, 70)
+}
+
+#Pinterest {
+  color: red;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+}
+.fa {
+  margin-top: 200px;
+  padding: 20px;
+  font-size: 20px;
+  width: 70px;
+  text-decoration: none;
+  
+}
+p {
+  color: black;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*  ---   NavBar CSS  ---  */
+
+li {
+  display: flex;
+  padding: 0.25em 0;
+  direction: ltr; 
+  font-family: sans-serif;
+
 }

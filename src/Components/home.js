@@ -1,6 +1,7 @@
 import React from 'react';
-// import './App.css';
+ import './App.css';
 import { NavBar } from './NavBar';
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   
@@ -11,7 +12,7 @@ class Home extends React.Component {
         WikiSearchTerms: ''
       }
     }
-  
+  // l
     useWikiSearchEngine = (e) => {
       e.preventDefault();
   
@@ -89,7 +90,12 @@ class Home extends React.Component {
     }
   
     render() {
-  <div> <NavBar /> </div>
+
+      <div>
+        <NavBar /> 
+      </div>
+
+
       let wikiSearchResults = [];
       console.log(this.state.wikiSearchReturnValues);
   
@@ -108,17 +114,19 @@ class Home extends React.Component {
   
         return (
   
-          <div className="App">
-            <img id="wikiGlobe" src="	https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" alt="g"/>
+          <div className="home-site">
+            {/* <img id="wikiGlobe" src="	https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" alt="g"/> */}
+            <img id="wikiGlobe" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikipedia_logo_puzzle_globe_spins_vertically%2C_revealing_the_contents_of_all_of_its_puzzle_pieces.gif/120px-Wikipedia_logo_puzzle_globe_spins_vertically%2C_revealing_the_contents_of_all_of_its_puzzle_pieces.gif" alt="g"/>
             <h1>Wikipedia Search</h1>
             <form action="">
-              <input type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
-              <button id="submitButton" type='submit' onClick={this.useWikiSearchEngine} >Search</button>
-              <p>The Free Encyclopedia</p>
+              <input className="input-box" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
+              <button className="search" type='submit' onClick={this.useWikiSearchEngine} >Search</button>
+              <p className='free-title'>The Free Encyclopedia</p>
   
                       <div className="language_buttons">
                         <ul>
-                          <button className="opt1">English</button>
+                        <Link to="/news" className="opt1">English</Link>
+                          {/* <button className="opt1" >English</button> */}
                           <button className="opt2">Español</button>
                           <button className="opt3">Italiano</button>
                           <button className="opt4">Deutsch</button>
