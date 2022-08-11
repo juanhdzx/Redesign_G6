@@ -335,7 +335,7 @@ li {
 #footer-places{
   
    display: flex;
-   gap: 5px;
+   gap: 50px;
   justify-content: center;
   flex-wrap: row wrap;
   width: 100%;
@@ -355,13 +355,14 @@ display: inline-block;
 }
 
 #footer-info-lastmod {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   width: 100%;
   bottom: 0;
   color: black;
   font-style: italic;
   font-size: 12px;
+  padding-top: 20px;
 }
 
 #footer-info-copyright {
@@ -375,6 +376,7 @@ display: inline-block;
 
 #homies {
   text-align: center;
+  padding-top: 10px;
   width: 100%;
   bottom: 0;
   color: black;
@@ -423,8 +425,66 @@ p {
   color: black;
   text-align: center;
 }
-@media(max-width: 800px){
-#footer-places{
-flex-flow: column wrap;
+
+
+
+
+
+
+
+
+/*  ---   NavBar CSS  ---  */
+
+li {
+  display: flex;
+  padding: 0.25em 0;
+  direction: ltr; 
+  font-family: sans-serif;
+
 }
+
+
+
+/* --- Contact Page CSS --- */ 
+
+/* .contact-page h1{
+  margin-right: -1em;
+}
+
+.form {
+  margin-left: 28em;
+  margin-bottom: 5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    max-width: fit-content;
+    color: white;
+}
+
+.contact-page .form input{
+  margin-bottom: 20px;
+  width: 450px;
+
+  border-radius: 16px;
+  font-family: monospace;
+  font-size: 16px;
+
+  margin-left: 20px;
+}
+
+.contact-page .form input[type=text]:focus {
+ background-color: lightblue;
+}
+
+#valid-submit {
+  width: 200px;
+  margin-left: 10em;
+*/
+@media(max-width: 800px){
+  #footer-places{
+  flex-flow: column wrap;
+  }
 }
