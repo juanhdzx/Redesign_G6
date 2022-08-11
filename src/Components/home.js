@@ -119,7 +119,7 @@ class Home extends React.Component {
             <img id="wikiGlobe" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikipedia_logo_puzzle_globe_spins_vertically%2C_revealing_the_contents_of_all_of_its_puzzle_pieces.gif/120px-Wikipedia_logo_puzzle_globe_spins_vertically%2C_revealing_the_contents_of_all_of_its_puzzle_pieces.gif" alt="g"/>
             <h1>Wikipedia Search</h1>
             <form action="">
-              <input type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
+              <input className="input-box" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
               <button className="search" type='submit' onClick={this.useWikiSearchEngine} >Search</button>
               <p>The Free Encyclopedia</p>
   
