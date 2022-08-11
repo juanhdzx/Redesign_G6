@@ -1,6 +1,5 @@
-import React, { useState }   from "react";
-import './App.css';
-
+import React, { useState, useEffect } from "react";
+import "./Contact.css";
 
 function Validation() {
   const [firstname, setFirstname] = useState("");
@@ -26,40 +25,55 @@ function Validation() {
       .catch((err) => console.log(err));
   };
   return (
-    <div className="contact-page">
+
+    <div>
       <h1>Contact</h1>
-      <form className="form" onSubmit={handleSubmit}>
-        <label>Name</label>
-        <input
-          type="text"
-          placeholder="Name..."
-          name="name"
-          onChange={(e) => setFirstname(e.target.value)}
-          required
-        /> <br />
-        <label>Email</label>
-        <input
-          type="text"
-          placeholder="@"
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-        /> <br />
-        <label>Phone</label>
-        <input
-          type="text"
-          placeholder="(XXX) XXX 1234"
-          name="phone"
-          onChange={(e) => setPhone(e.target.value)}
-        /> <br />
-        <label>Comment</label>
-        <input
-          type="text"
-          placeholder="Leave a message..."
-          name="comment"
-          onChange={(e) => setComment(e.target.value)}
-        /> <br />
-        <input id="valid-submit" type="submit"  name="SUBMIT" />
-      </form>
+      <div className="fieldset">
+        <form onSubmit={handleSubmit}>
+
+          <div className="form-row form-container" >
+            <label className="form-row">Name</label>
+            <input
+              className="form-row"
+              type="text"
+              placeholder="Name..."
+              name="name"
+              onChange={(e) => setFirstname(e.target.value)}
+              required
+            />
+            <label className="form-row">Email</label>
+            <input
+              className="form-row"
+              type="text"
+              placeholder="@"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="form-row">Phone</label>
+            <input
+              className="form-row"
+              type="text"
+              placeholder="(###) ### ####"
+              name="phone"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <label className="form-row">Comment</label>
+            <input
+              className="form-row"
+              type="text"
+              placeholder="Leave a message..."
+              name="comment"
+              onChange={(e) => setComment(e.target.value)}
+            />
+            <div className="submit-row">
+              <input type="submit" name="SUBMIT" className="form-submit" />
+
+            </div>
+          </div>
+
+        </form>
+        
+      </div>
     </div>
   );
 }

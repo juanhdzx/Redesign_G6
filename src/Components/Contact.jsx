@@ -1,8 +1,8 @@
-import React from 'react'
-import NavBar from './NavBar'
-import styled from 'styled-components'
-import Validation from './Validation'
-import Footer from './Footer'
+import React from "react";
+import NavBar from "./NavBar";
+import styled from "styled-components";
+import Validation from "./Validation";
+import Footer from "./Footer";
 
 import './App.css';
 
@@ -17,23 +17,22 @@ const Container = styled.div`
 
 `;
 const Wrapper = styled.div`
-    
-    padding:20px;
-    background-color:white;
-    
-
+  padding: 20px;
+  background-color: white;
 `;
-
 
 const Contact = () => {
   return (
-      <> <Validation/>
-    {/* <Container>
+    <>
+      {" "}
+      <Validation />
+      {/* <Container>
         <Wrapper>
 
         </Wrapper>
     </Container> */}
- </> )
-}
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

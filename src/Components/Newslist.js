@@ -22,7 +22,7 @@ function Newslist() {
 
             /> */}
             <h1>Wikipedia Commons</h1>
-            <div>
+            <div className="News-li">
                 {articles.map(article => {
                     return (
                         <Newsitem

@@ -9,11 +9,11 @@ export const NavBar = () => {
         <React.Fragment>
             <nav>
 
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li ><Link to="/news">News</Link></li>
-                    <li ><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/dictionary">Dictionary</Link></li>
+                <ul className= "nav-list">
+                    <li className="nav-item"><Link to="/">Home</Link></li>
+                    <li className="nav-item"><Link to="/news">News</Link></li>
+                    <li className="nav-item"><Link to="/contact">Contact</Link></li>
+                    <li className="nav-item"><Link to="/dictionary">Dictionary</Link></li>
 
                 </ul>
 
