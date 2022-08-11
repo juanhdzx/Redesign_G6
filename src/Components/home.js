@@ -121,7 +121,7 @@ class Home extends React.Component {
             <form action="">
               <input className="input-box" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
               <button className="search" type='submit' onClick={this.useWikiSearchEngine} >Search</button>
-              <p>The Free Encyclopedia</p>
+              <p className='free-title'>The Free Encyclopedia</p>
   
                       <div className="language_buttons">
                         <ul>

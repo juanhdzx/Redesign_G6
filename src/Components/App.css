@@ -33,6 +33,9 @@ text-align: center;
   height: 183px;
   
 }
+.free-title {
+   /*   add css for "The Free Encyclopedia" title here  */
+}
 p {
   font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
 }
@@ -51,10 +54,11 @@ p {
 .language_buttons {
   margin-right: 30px;
 }
-.opt1 {
+.opt1 {   /* English button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -70,10 +74,11 @@ p {
   background-color: #008CBA;
   color: white;
 }
-.opt2{
+.opt2{   /* Espanol button   */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -89,10 +94,11 @@ p {
   color: white;
 }
 
-.opt3{
+.opt3{  /* italiano button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -108,10 +114,11 @@ p {
   color: white;
 }
 
-.opt4{
+.opt4{  /* deutsch button  */
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
