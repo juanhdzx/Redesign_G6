@@ -31,6 +31,7 @@ function Dictionary() {
   return (
       <div className="App">
           <h1>Free Dictionary</h1>
+          <h3>Go ahead, don't be shy..</h3>
           <div className="searchBox">
               <input
                   type="text"

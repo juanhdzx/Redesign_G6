@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState }   from "react";
+import './App.css';
 
 
 function Validation() {
@@ -25,35 +26,39 @@ function Validation() {
       .catch((err) => console.log(err));
   };
   return (
-    <div className="App">
+    <div className="contact-page">
       <h1>Contact</h1>
       <form className="form" onSubmit={handleSubmit}>
         <label>Name</label>
         <input
           type="text"
+          placeholder="Name..."
           name="name"
           onChange={(e) => setFirstname(e.target.value)}
           required
-        />
+        /> <br />
         <label>Email</label>
         <input
           type="text"
+          placeholder="@"
           name="email"
           onChange={(e) => setEmail(e.target.value)}
-        />
+        /> <br />
         <label>Phone</label>
         <input
           type="text"
+          placeholder="(XXX) XXX 1234"
           name="phone"
           onChange={(e) => setPhone(e.target.value)}
-        />
+        /> <br />
         <label>Comment</label>
         <input
           type="text"
+          placeholder="Leave a message..."
           name="comment"
           onChange={(e) => setComment(e.target.value)}
-        />
-        <input type="submit" name="SUBMIT" />
+        /> <br />
+        <input id="valid-submit" type="submit"  name="SUBMIT" />
       </form>
     </div>
   );
