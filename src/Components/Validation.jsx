@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./Contact.css";
 
 function Validation() {
   const [firstname, setFirstname] = useState("");
@@ -25,36 +25,46 @@ function Validation() {
       .catch((err) => console.log(err));
   };
   return (
-    <div className="App">
+    <div>
       <h1>Contact</h1>
-      <form className="form" onSubmit={handleSubmit}>
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          onChange={(e) => setFirstname(e.target.value)}
-          required
-        />
-        <label>Email</label>
-        <input
-          type="text"
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label>Phone</label>
-        <input
-          type="text"
-          name="phone"
-          onChange={(e) => setPhone(e.target.value)}
-        />
-        <label>Comment</label>
-        <input
-          type="text"
-          name="comment"
-          onChange={(e) => setComment(e.target.value)}
-        />
-        <input type="submit" name="SUBMIT" />
-      </form>
+      <div className="fieldset">
+        <form onSubmit={handleSubmit}>
+          <div className="form-row">
+            <label className="form-row">Name</label>
+            <input
+              className="form-row"
+              type="text"
+              name="name"
+              onChange={(e) => setFirstname(e.target.value)}
+              required
+            />
+            <label className="form-row">Email</label>
+            <input
+              className="form-row"
+              type="text"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="form-row">Phone</label>
+            <input
+              className="form-row"
+              type="text"
+              name="phone"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <label className="form-row">Comment</label>
+            <input
+              className="form-row"
+              type="text"
+              name="comment"
+              onChange={(e) => setComment(e.target.value)}
+            />
+            <div className="submit-row">
+              <input type="submit" name="SUBMIT" className="form-submit" />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
