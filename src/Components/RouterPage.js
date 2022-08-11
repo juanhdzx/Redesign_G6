@@ -3,7 +3,7 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
 import Dictionary from './Dictionary';
-import { News } from './News';
+import Newslist from './Newslist';
 import {NavBar} from './NavBar';
 import { Footer } from './Footer';
 //import './App.css';
@@ -18,7 +18,7 @@ import { Footer } from './Footer';
               <Route path="/"  element={<Home/>} />
               <Route path="contact" element={<Contact/>} />
               <Route path="dictionary" element={<Dictionary/>} />
-              <Route path="news" element={<News/>} />
+              <Route path="news" element={<Newslist/>} />
 
           </Routes>
           <Footer />

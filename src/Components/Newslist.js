@@ -15,11 +15,13 @@ function Newslist() {
         getArticles()
     }, [])
     return (
+        
         <div class="d-flex align-items-start">
-            <img src="wikilogo.png"
+            {/* <img src="wikilogo.png"
                 width="200" px
 
-            />
+            /> */}
+            <h1>Wikipedia Commons</h1>
             <div>
                 {articles.map(article => {
                     return (
