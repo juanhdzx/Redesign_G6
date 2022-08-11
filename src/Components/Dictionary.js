@@ -1,14 +1,10 @@
-
 //import { NavBar } from "./NavBar";
-import "./Dictionary.css"; 
+import "./Dictionary.css";
 import { React, useState } from "react";
 import Axios from "axios";
 import { FaSearch } from "react-icons/fa";
 import { FcSpeaker } from "react-icons/fc";
 //import { NavBar } from "./NavBar";
-
-
-
 function Dictionary() {
   // Setting up the initial states using react hook 'useState'
   const [data, setData] = useState("");
