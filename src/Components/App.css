@@ -3,37 +3,61 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
 }
 
 body {
   background-color: rgb(205, 235, 245);
 }
 
+nav {
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  color: aliceblue;
+}
+
 .home-site {
-  width: 1100px;
-  margin: 0 auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: -70px;
 }
 
 h1 {
-font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
-font-size: 30px;
-font-size: 3rem;
-font-weight: 400;
-line-height: 33px;
-line-height: 3.3rem;
-text-align: center;
+  font-family: Linux Libertine, Hoefler Text, Georgia, Times New Roman, Times, serif;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 33px;
+  line-height: 3.3rem;
+  text-align: center;
 }
 
 #wikiGlobe {
   width: 200px;
   height: 183px;
-  
+
 }
+
+.free-title {
+  /*   add css for "The Free Encyclopedia" title here  */
+}
+
 p {
-  font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+  font-family: Linux Libertine, Hoefler Text, Georgia, Times New Roman, Times, serif;
 }
 
 
@@ -45,46 +69,41 @@ p {
 
 
 
-/*  --- Language Buttons --- */ 
+/*  --- Language Buttons --- */
 
-/* .language_buttons {
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-} */
 .language_buttons {
   margin-right: 30px;
 }
+
 .opt1 {
-  background-color: white; 
-  color: black; 
+  /* English button  */
+  background-color: white;
+  color: black;
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  margin-bottom: 50px;
   transition-duration: 0.4s;
   cursor: pointer;
   height: 19px;
 }
+
 .opt1:hover {
   background-color: #008CBA;
   color: white;
 }
-.opt2{
-  background-color: white; 
-  color: black; 
+
+.opt2 {
+  /* Espanol button   */
+  background-color: white;
+  color: black;
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -95,15 +114,18 @@ p {
   cursor: pointer;
   height: 55px;
 }
+
 .opt2:hover {
   background-color: #008CBA;
   color: white;
 }
 
-.opt3{
-  background-color: white; 
-  color: black; 
+.opt3 {
+  /* italiano button  */
+  background-color: white;
+  color: black;
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -114,15 +136,18 @@ p {
   cursor: pointer;
   height: 55px;
 }
-.opt3:hover{
+
+.opt3:hover {
   background-color: #008CBA;
   color: white;
 }
 
-.opt4{
-  background-color: white; 
-  color: black; 
+.opt4 {
+  /* deutsch button  */
+  background-color: white;
+  color: black;
   border: 2px solid #008CBA;
+  border-radius: 16px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -133,10 +158,11 @@ p {
   cursor: pointer;
   height: 55px;
 }
-.opt4:hover{
+
+.opt4:hover {
   background-color: #008CBA;
   color: white;
-  
+
 }
 
 
@@ -147,28 +173,56 @@ p {
 /*   ---  Home Page - Form  ---  */
 
 
-.search{
+.search {
   background-color: #626667;
-  color: rgb(242, 239, 239); 
+  color: rgb(242, 239, 239);
   padding: 5px 8px;
   text-align: center;
-  /* display: inline-block; */
+  /* display: inline-block;  */
   font-size: 14px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 4px 2px;
   margin-left: 5px;
   transition-duration: 0.4s;
   cursor: pointer;
   height: 2.5em;
   border-radius: 3px;
-}
-input {
-  width: 35em;
-  height: 2.5em;
-  line-height: 40px;
-  border-radius: 20px 0 0 20px;
   border: none;
-  padding: 0 20px;
+  appearance: none;
+  overflow: hidden;
+  outline: none;
+  border-radius: 6px;
+
+}
+
+.search:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.input-box {
+
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: none;
+  appearance: none;
+  overflow: hidden;
+  outline: none;
+
+  width: 100%;
+  max-width: 380px;
+  transition: 0.4s;
+  padding: 3px;
+  padding-left: 30px;
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-family: monospace;
+}
+
+.input-box:focus-within {
+  box-shadow: 3px 3px 6px black;
+  transform: translateY(-5px);
 }
 
 
@@ -177,43 +231,160 @@ input {
 /*     ---    Search Result Links   ---  */
 
 
-.searchResultDiv { 
+.searchResultDiv {
   width: 800px;
   margin: 0 auto;
   text-align: left;
-  margin-bottom: 20px;
-    border: 12px hidden #849195;
-    padding: 15px;
-  
+  margin-top: 30px;
+  margin-bottom: 16px;
+  border: 12px hidden #849195;
+  padding: 15px;
+  padding-left: 20px;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  transition: 0.4s;
+
 }
+
+.searchResultDiv:hover {
+  box-shadow: 3px 3px 6px black;
+
+}
+
 .searchResultDiv h3 {
-  color: #1a0dab;
+  color: #2222ba;
+  font-size: 20px;
+  margin-bottom: 16px;
+
 }
+
 .searchResultDiv h3 a {
   color: #1a0dab;
   display: inline-block;
-  line-height: 16px;
+  line-height: 15px;
   text-decoration: none;
+  padding: 12px 16px;
+  transition: 0.3s;
+
+  font-weight: 700;
+  border-radius: 12px;
+  transition: 0.4s;
+  background-color: lightgray;
 }
+
 .searchResultDiv h3 a:hover {
   border-bottom: 3px solid;
 }
-.searchResultDiv a:visited { /* pages visited change color */
+
+.searchResultDiv a:visited {
+  /* pages visited change color */
   color: #9f1ccb;
 }
+
 .searchResultDiv .link a {
   text-decoration: none;
-  color: #287e44;
+  color: #aa19b4;
+
 }
+
 .searchResultDiv .link a:hover {
   text-decoration: none;
+
 }
+
 .searchResultDiv .searchmatch {
   font-weight: bold;
+
 }
+
 .searchResultDiv .description {
   color: #414141;
+  font-size: 17px;
+  margin-bottom: 16px;
+  padding: 13px;
+  text-align: left;
+  line-height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
+
+
+/*  ---      Main Footer CSS      ---  */
+
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+li {
+  font-style: italic;
+  font-size: 12px;
+  color: black;
+}
+
+#footer-places{
+  
+   display: flex;
+   gap: 5px;
+  justify-content: center;
+  flex-wrap: row wrap;
+  width: 100%;
+}
+
+#footer-places a{
+display: inline-block;
+}
+#footer-info {
+  font-size: .80em;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#footer-info-lastmod {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#footer-info-copyright {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#homies {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+}
+
+
+/* ---     Social Media - Footer      --- */
+
 #FB {
   color: blue;
 }
@@ -229,6 +400,7 @@ input {
 #Pinterest {
   color: red;
 }
+
 footer {
   text-align: center;
   width: 100%;
@@ -237,29 +409,22 @@ footer {
   font-style: italic;
   font-size: 12px;
 }
+
 .fa {
   margin-top: 200px;
   padding: 20px;
   font-size: 20px;
   width: 70px;
   text-decoration: none;
-  
+
 }
+
 p {
   color: black;
   text-align: center;
 }
-
-
-
-
-
-/*  ---   NavBar CSS  ---  */
-
-li {
-  display: flex;
-  padding: 0.25em 0;
-  direction: ltr; 
-  font-family: sans-serif;
-
+@media(max-width: 800px){
+#footer-places{
+flex-flow: column wrap;
+}
 }
