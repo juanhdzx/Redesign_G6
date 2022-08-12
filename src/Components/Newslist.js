@@ -8,9 +8,9 @@ function Newslist() {
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d36739fd143e43a583f27265996997aa')
+            const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_10149ce4982a73dc9b1509533045a099c97b8&q=business&country=us&language=en&category=business')
             console.log(response)
-            setArticles(response.data.articles)
+            setArticles(response.data.results)
         }
         getArticles()
     }, [])
@@ -29,7 +29,7 @@ function Newslist() {
                             title={article.title}
                             description={article.description}
                             url={article.url}
-                            urlToImage={article.urlToImage}
+                            urlToImage={article.image_url}
                         />
                         
                     )
